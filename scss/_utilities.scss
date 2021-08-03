@@ -1,12 +1,3 @@
-//文字顏色
-$color-primary:#AA0601;
-$color-primary-light: #AA06010D;
-$color-primary-dark:#650300;
-$color-secondary:#000000;
-$color-secondary-light:#555555;
-
-//連結顏色
-$linkColor-primary:#ffffff;
 
 //版面寬度
 .container{
@@ -21,6 +12,14 @@ $linkColor-primary:#ffffff;
     overflow: hidden;
 }
 //陰影效果box-shadow
+
+//flex
+.d-flex{
+    display: flex;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
 
 //PC間距
 .mb-1{
