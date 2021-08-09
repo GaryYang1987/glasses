@@ -1,0 +1,171 @@
+.header{
+    background-color: $color-primary;
+}
+.logo a{
+    width: 80px;
+    height: 48px;
+    background: url(/img/logo.png) no-repeat;
+    display: block;
+}
+.paddingHeader{
+    padding: 30px 80px;
+}
+.menu{
+    li{
+        padding: 0px 32px;
+    }
+    a{
+        color: $linkColor-primary;
+    }
+    & a:hover{
+        color: gold;
+    }
+}
+.banner{
+   height: 840px;
+   background: url(/img/banner.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+   &__solgan{
+       height: 100%;
+       span{
+           color: $color-primary-dark;
+           font-size: $span-font-size; 
+           }
+        h2{
+            color: $color-primary-dark;
+            font-size: $h1-font-size;
+            font-weight: bold;
+        }
+    }
+}
+.specialized{
+    background-color: #FBF2F2;
+    padding: 60px 0px 80px;
+    color: $color-primary-dark;
+}
+.sectionTitle{
+    text-align: center;
+    font-size: $h2-font-size;
+    font-weight: bold;
+    color: $color-primary-dark;
+}
+
+.specialized__subject__item{
+    text-align: center;
+    width: 22%;
+    &__img{
+        display: block;
+        margin: 0 auto;
+        width: 83px;
+        height: 83px;
+    }
+    &__title{
+        font-size: $h4-font-size;
+        font-weight: bold;
+    }
+    &__body{
+        text-align: left;
+        color: $color-secondary;
+    }
+}
+.main__classic{
+    padding: 60px 0px 80px;
+    color: $color-primary-dark;
+}
+.main__classic__item__body{
+        color: $color-primary;
+        font-size: $h2-font-size;
+        margin: 0px 30px;
+        font-weight: bold;
+}
+.main__classic__item__img{
+    width: 56%;
+}
+.f-style{
+    font-style: italic;
+}
+.design{
+    height: 705px;
+    background: url(/img/bg.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.sectionTitle-white{
+    text-align: center;
+    font-size: $h2-font-size;
+    font-weight: bold;
+    color: $linkColor-primary
+}
+.paddingSubtitle{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.design__card__pic{
+    width: 48%;
+    position: relative;
+    &::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: white;
+    opacity: 0.5;
+    }
+}
+.dedignSubtitle{
+    position: absolute;
+    font-size: 72px;
+    color: $color-primary;
+    top:50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    font-weight: bold;
+    max-width: 100%;
+    text-align: center;
+}
+.customRecommend__list__item{
+    width: 23%;
+    border: 1px solid #DEE2E6;
+    box-shadow: 0 2px 6px #00000029;
+    border-radius: 4px;
+        &__img{
+            height: 256px;
+    }
+        &__body{
+            padding: 0px 16px;
+            height: 204px;
+        }
+        &__body__subTitle{
+            font-size: 14px;
+        }
+        &__body__content{
+            margin-bottom: auto;
+        }
+}
+.customRecommend__list__item__body__date{
+    color: #707070;
+    font-size: 14px;
+}
+.contact{
+    background-color: #FBF2F2;
+    padding: 60px 0px 80px;
+}
+.sectionTitle-black{
+    text-align: center;
+    font-size: $h2-font-size;
+    font-weight: bold;
+    color: $color-secondary
+}
+.contact__content{
+    width: 65%;
+    margin: 0 auto;
+    &__body{
+        font-size: $h5-font-size;
+    
+    }
+}
+.contactUs__content__form{
+    margin: 24px auto;
+}
