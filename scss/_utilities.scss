@@ -3,8 +3,13 @@
 .container{
     max-width: 1140px; 
     margin: 0 auto;
-    padding: 0 15px;   
+    padding: 0 15px;
+    @media(max-width: 768px){
+        max-width: 690px;
+    }     
 }
+
+
 //圖片取代文字
 .text-hidden{
     white-space: nowrap; 
@@ -32,13 +37,21 @@
 .align-items-flex-end{
     align-items: flex-end;
 }
+.align-items-baseline{
+    align-items: baseline;
+}
 .flex-direction-column{
     flex-direction: column;
 }
 .flex-wrap-wrap{
     flex-wrap: wrap;
 }
-
+.flex-direction-row-reverse{
+    flex-direction: row-reverse;
+    @media(max-width: 768px){
+        flex-direction: row;
+    }
+}
 
 
 //PC間距
@@ -63,6 +76,9 @@
 .mt-3{
     margin-top: 24px;
 }
+.mt-4{
+    margin-top: 32px;
+}
 .mt-5{
     margin-top: 40px;
 }
@@ -72,9 +88,21 @@
 .pb-1{
     padding-bottom: 8px;
 }
+.pb-5{
+    padding-bottom: 40px;
+}
 .pt-2{
     padding-top: 16px;
 }
+.pt-4{
+    padding-top: 32px;
+}
 .pt-5{
     padding-bottom: 40px;
+}
+.pr-4{
+    padding-right: 32px;
+}
+.pr-6{
+    padding-right: 48px;
 }

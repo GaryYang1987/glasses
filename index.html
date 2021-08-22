@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>眼鏡形象網站</title>
     <link rel="stylesheet" href="/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header d-flex justify-content-space-between paddingHeader">
-        <h1 class="logo text-hidden">
-            <a href="#">logo</a>
-        </h1>
+    <header class="header">
+        <div class="headerBlock">       
+            <div>
+                <a href="#" class="logo text-hidden" >logo</a>
+            </div>          
         <ul class="menu d-flex align-items-center">
-            <li><a href="#">系列鏡框</a></li>
-            <li><a href="#">門市據點</a></li>
-            <li><a href="#">部落格</a></li>
-            <li><a href="#">常見問題</a></li>
+            <li class="menu__item"><a href="#">系列鏡框</a></li>
+            <li class="menu__item"><a href="#">門市據點</a></li>
+            <li class="menu__item"><a href="#">部落格</a></li>
+            <li class="menu__item"><a href="#">常見問題</a></li>
         </ul>
+        </div>      
     </header>
         <section class="banner">
             <div class="banner__solgan container d-flex flex-direction-column align-items-flex-end justify-content-center">
@@ -31,7 +33,7 @@
         <section class="specialized">
             <div class="container">
                 <h2 class="sectionTitle ">用專業的心，做專業的事</h2>
-                <ul class="specialized__subject d-flex justify-content-space-between mt-6">
+                <ul class="specialized__subject d-flex justify-content-space-between flex-wrap-wrap mt-6">
                         <li class="specialized__subject__item">
                             <img class="specialized__subject__item__img" src="/img/icon-dollar.svg" alt="price">
                             <h4 class="specialized__subject__item__title mt-3">單一價格</h4>
@@ -58,62 +60,73 @@
         </section>
         <section class="main__classic">
             <div class="container">
-                <h2 class="sectionTitle pt-5">經典系列鏡框</h2>
+                <h2 class="sectionTitle mb-5">經典系列鏡框</h2>
                 <ul>
                     <li class="main__classic__item d-flex align-items-center mb-4">
-                        <img class="main__classic__item__img d-block" src="/img/product-1.png" alt="product-1">
-                        <a class="main__classic__item__body d-block" href="#">
-                            <h3 class="f-style">
-                                <span class="material-icons-outlined">
-                                    auto_awesome
-                                  </span>
-                                OPTICAL
-                            </h3>
-                        </a>
+                        <img class="main__classic__item__img " src="/img/product-1.png" alt="product-1">
+                        <div class="main__classic__item__pc  main__classic__item__bg1">
+                            <a class="main__classic__item__body d-block align-items-center" href="#">
+                                <h3 class="f-style d-flex align-items-center">
+                                    <span class="material-icons-outlined">
+                                        auto_awesome
+                                      </span>
+                                    OPTICAL
+                                </h3>
+                            </a>
+                        </div>
+                    
                     </li>
-                    <li class="main__classic__item d-flex align-items-center mb-4">
-                        <a class="main__classic__item__body d-block" href="#">
-                            <h3 class="f-style">
-                                <span class="material-icons-outlined">
-                                    light_mode
-                                    </span>
-                                SUNGLASSES
-                            </h3>
-                        </a>
-                        <img class="main__classic__item__img d-block" src="/img/product-2.png" alt="product-2">
+                    <li class="main__classic__item d-flex align-items-center mb-4 flex-direction-row-reverse">
+                        <img class="main__classic__item__img d-block " src="/img/product-2.png" alt="product-2">
+                        <div class="main__classic__item__pc main__classic__item__bg2">
+                            <a class="main__classic__item__body d-block align-items-center" href="#">
+                                <h3 class="f-style d-flex align-items-center">
+                                    <span class="material-icons-outlined">
+                                        light_mode
+                                        </span>
+                                    SUNGLASSES
+                                </h3>
+                            </a>
+                        </div>
+                        
                     </li>
                     <li class="main__classic__item d-flex align-items-center mb-4">
                         <img class="main__classic__item__img d-block" src="/img/product-3.png" alt="product-3">
-                        <a class="main__classic__item__body d-block" href="#">
-                            <h3 class="f-style">
-                                <span class="material-icons-outlined">
-                                    flash_on
-                                    </span>
-                                FUNCTIONAL</h3>
-                        </a>
+                        <div class="main__classic__item__pc main__classic__item__bg3">
+                            <a class="main__classic__item__body d-block align-items-center" href="#">
+                                <h3 class="f-style d-flex align-items-center">
+                                    <span class="material-icons-outlined">
+                                        flash_on
+                                        </span>
+                                    FUNCTIONAL</h3>
+                            </a>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="design paddingSubtitle">
+        <section class="design ">
             <div class="container">
                 <h2 class="sectionTitle-white mb-5">聯名設計鏡框</h2>
                 <ul class="design__card d-flex justify-content-space-between align-items-center flex-wrap-wrap">
-                    <li class="design__card__pic d-flex align-items-center justify-content-center">
-                        <img src="/img/product-8.png" alt="">
-                        <h3 class="dedignSubtitle">Double A+</h3>
+                    <li class="design__card__pic">
+                        <div class="designPic designPic-left d-flex align-items-center justify-content-center">
+                            <h3 class="designSubtitle">Double A+</h3>
+                        </div>                  
                     </li>
-                    <li class="design__card__pic d-flex align-items-center justify-content-center">
-                        <img src="/img/product-9.png" alt="">
-                        <h3 class="dedignSubtitle">YOUTH</h3>
+                    <li class="design__card__pic">
+                        <div class="designPic designPic-right d-flex align-items-center justify-content-center">
+                            <h3 class="designSubtitle">YOUTH</h3>
+                        </div>      
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="customRecommend paddingSubtitle">
+        <section class="customRecommend ">
             <div class="container">
-                <h2 class="sectionTitle pt-5">顧客推薦</h2>
-                <ul class="customRecommend__list d-flex justify-content-space-between mt-5">
+                <h2 class="sectionTitle mb-4">顧客推薦</h2>
+                <ul class="customRecommend__list d-flex justify-content-space-between align-items-baseline flex-wrap-wrap ">
                     <li class="customRecommend__list__item">
                         <img src="/img/rec-1.png" class="customRecommend__list__item__img" alt="rec-1">
                         <div class="customRecommend__list__item__body d-flex flex-direction-column">
@@ -156,7 +169,7 @@
         <section class="contact">
             <div class="container">
                 <div class="contact__content">
-                    <h2 class="sectionTitle-black">聯絡我們
+                    <h2 class="sectionTitle-black mb-3">聯絡我們
                     </h2>
                     <p class="contact__content__body">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
                     <form action="" class="contactUs__content__form">
@@ -181,9 +194,45 @@
                         <button type="submit" class="contactUs__content__form__submit">確認送出</button>
                       </form>
                 </div>
-            </div>
-            
-            
+            </div>           
         </section>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__menu d-flex justify-content-space-between " >
+                    <nav class="footer__menu__nav">
+                        <ul class="footer__menu__item d-flex justify-content-space-between align-items-center">
+                            <li><a href="#" >首頁</a></li>
+                            <li><a href="#" >系列鏡框</a></li>
+                            <li><a href="#" >門市據點</a></li>
+                            <li><a href="#" >部落格</a></li>
+                            <li><a href="#" >常見問題</a></li>
+                        </ul>
+                        <ul class="footer__menu__content ">
+                            <li><a  href="tel:+0800-000-000" class="footer__menu__content__link d-flex align-items-center"><img  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/e14818f156111b5b0a00492903c1552d319ec9c5/week3/icon-phone.svg" alt="0800-000-000" class="footer__menu__content__link__pic">0800-000-000</a>
+                            </li>
+                            <li><a href="mailto:glasses@business.com" class="footer__menu__content__link d-flex align-items-center"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/e14818f156111b5b0a00492903c1552d319ec9c5/week3/icon-mail.svg" alt="glasses@business.com" class="footer__menu__content__link__pic">glasses@business.com</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="social">
+                        <ul class="footer__menu__social d-flex justify-content-space-between">
+                            <li><a href="https://www.facebook.com/" class="footer__menu__social__link" ><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/e14818f156111b5b0a00492903c1552d319ec9c5/week3/icon-fb.svg" alt="facebook" class="footer__menu__social__icon"></a></li>
+                            <li><a href="https://www.instagram.com/" class="footer__menu__social__link"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/e14818f156111b5b0a00492903c1552d319ec9c5/week3/icon-ig.svg" alt="instagram" class="footer__menu__social__icon"></a></li>
+                            <li><a href="https://line.me/zh-hant/" class="footer__menu__social__link"><img  src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/e14818f156111b5b0a00492903c1552d319ec9c5/week3/icon-line.svg" alt="line" class="footer__menu__social__icon"></a></li>
+                        </ul>                             
+                    </nav>                  
+                </div>
+                    <div class="copyright d-flex justify-content-space-between align-items-center  ">
+                        <p class="copyright__text">Copyright © 2020 Glasses.All rights reserved.</p>
+                        <ul class="privacyMenu d-flex justify-content-space-between align-items-center">
+                            <li class="privacyItem"><a href="#" class="privacyLink">隱私權政策</a></li>
+                            <li class="privacyItem"><a href="#" class="privacyLink">服務條款</a></li>
+                        </ul>
+                    </div>
+                
+
+
+            </div>
+        </div>
 </body>
 </html>
