@@ -8,7 +8,10 @@
     font-weight: bold;
     border: 1px solid #DCDCDC;
     padding: 27px 20px;
-    
+    @include pad{
+        font-size: 14px;
+        padding: 6px ;
+    }
     
 }
 .productLink.active{
@@ -19,19 +22,22 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-bottom: 8px solid #AA0601;   
+    border-bottom: 8px solid #AA0601;
 }
 .productLink.hover::after{
     content: '';
     position: absolute;
     bottom: 0;
     width: 0%;
-    border-bottom: 8px solid;
+    border-bottom: 8px solid #AA0601;
     transition:all .4s;
 }
 .productIcon{
     font-size: 40px;
     margin-right: 10px;
+    @include pad{
+        font-size: 30px;
+    }
 }
 .productAd{
     width: 50%;
@@ -45,57 +51,104 @@
 }
 .productBlock{
     text-align: center;
+    @include pad{
+        padding-top: 32px;
+    }
 }
 .productTitle{
     font-size: 42px;
+    @include pad{
+        font-size: 20px;
+    }
 }
 .productSubtitle{
     font-size: $span-font-size;
+    @include pad{
+        font-size: $span-font-size;
+        margin-bottom: 4px;
+    }
+}
+.productMenu{
+    @include pad{
+        margin-bottom: 24px;
+    }
 }
 .productCard{
     width: 23%;
+    @include pad{
+        width: 48%;
+        margin: 32px 0;
+    }
+    @include mobile{
+        width: 100%;
+        margin: 16px 0;
+    }
 }
 .productPic{
     height: 164px;
+    @include pad{
+        height: 166px;
+    }
+    
+}
+.productInfo{
+    @include pad{
+        font-size: $font-size-base;
+    }
 }
 .opticalPic-1{
-    background: url(/img/products-1.png)no-repeat center/cover;
+    background: url(/img/products-1.png)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-2{
-    background: url(/img/products-2.png)no-repeat center/cover;
+    background: url(/img/products-2.png)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-3{
-    background: url(/img/products-3.png)no-repeat center/cover;
+    background: url(/img/products-3.png)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-4{
-    background: url(/img/products-4.png)no-repeat center/cover;
+    background: url(/img/products-4.png)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-5{
-    background: url(/img/products-5.jpg)no-repeat center/cover;
+    background: url(/img/products-5.jpg)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-6{
-    background: url(/img/products-6.jpg)no-repeat center/cover;
+    background: url(/img/products-6.jpg)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-7{
-    background: url(/img/products-7.jpg)no-repeat center/cover;
+    background: url(/img/products-7.jpg)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-8{
-    background: url(/img/products-8.jpg)no-repeat center/cover;
+    background: url(/img/products-8.jpg)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-9{
-    background: url(/img/products-9.jpg)no-repeat center/cover;
+    background: url(/img/products-9.jpg)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-10{
-    background: url(/img/products-10.jpg)no-repeat center/cover;
+    background: url(/img/products-10.jpg)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-11{
-    background: url(/img/products-11.jpg)no-repeat center/cover;
+    background: url(/img/products-11.jpg)no-repeat center;
+    background-size: cover;
 }
 .opticalPic-12{
-    background: url(/img/products-12.jpg)no-repeat center/cover;
+    background: url(/img/products-12.jpg)no-repeat center;
+    background-size: cover;
 }
 .productColor{
     font-size: $h4-font-size;
+    @include pad{
+        margin-bottom: 0;
+    }
 }
 .productPrice{
     color: #AA0601;
@@ -117,6 +170,9 @@
 .pageBar{
     margin-top: 96px;
     margin-bottom: 160px;
+    @include pad{
+        margin-bottom: 56px;
+    }
 }
 .pageLink{
     padding: 11px 16px;
@@ -126,5 +182,12 @@
     &:hover{
         background-color: #555555;
         color:$linkColor-primary;
+    }
+    @include pad{
+        font-size: $font-size-base;
+        padding: 10px 12px;
+    }
+    @include mobile{
+        font-size: 8px;
     }
 }
